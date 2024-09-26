@@ -1,0 +1,416 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Work Sans";
+  background-color: #7eb8dc;
+}
+
+nav.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  margin-bottom: 20vh;
+}
+
+nav.navbar div.site-title {
+  display: flex;
+  flex-direction: row;
+}
+
+nav.navbar div.site-title a {
+  text-decoration: none;
+}
+
+nav.navbar div.site-title a div.logo {
+  width: 100px;
+  height: 100px;
+  background-image: url(assets/Invincibles_logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 80vh;
+}
+
+nav.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-items: center;
+}
+
+nav.navbar li {
+  list-style-type: none;
+  margin-left: 5px;
+}
+
+nav.navbar li a {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+nav.navbar li a:hover {
+  text-decoration: underline;
+}
+
+nav.navbar div.socials {
+  display: flex;
+  gap: 2vh;
+}
+
+div.content {
+  margin-left: 30vh;
+  margin-right: 30vh;
+}
+
+div.content h2 {
+  color: white;
+}
+
+div.container-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  background-image: url(assets/Website_Thiago1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 45vh;
+  z-index: 1;
+}
+
+div.container-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 52, 81, 0.5);
+  z-index: -1;
+}
+
+div.container-banner span {
+  color: white;
+  font-size: 10vh;
+  font-weight: bold;
+}
+
+div.container-banner p {
+  font-size: 20px;
+  margin-left: 40vh;
+  margin-right: 40vh;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+}
+
+div.container-banner > a {
+  text-decoration: none;
+  font-size: 1.2vw;
+  color: white;
+  background-color: #5579a6;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+div.container-banner > a:hover {
+  background-color: #7caede;
+}
+
+div.games {
+  background-color: #343a40;
+  padding-left: 6vh;
+  padding-right: 6vh;
+  padding-top: 10vh;
+  padding-bottom: 18vh;
+}
+
+div.games div.image {
+  width: 616px;
+  height: 353px;
+  background-image: url(assets/capsule_616x353.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.games a {
+  color: #e03c34;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div.about {
+  background-color: #38454d;
+  padding-left: 6vh;
+  padding-right: 6vh;
+  padding-top: 12vh;
+  padding-bottom: 26vh;
+}
+
+div.about > div.container {
+  display: flex;
+}
+
+div.about > div.container > div.left {
+  margin-right: 25vh;
+}
+
+div.about div.container > div.right div.contact {
+  display: flex;
+  margin-right: 30vh;
+}
+
+div.about div.container div.left span.title {
+  font-size: 6vh;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+div.about div.container div.right span.title {
+  font-size: 6vh;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+div.about div.container div.left p {
+  margin-top: 4vh;
+  font-size: 18px;
+}
+
+div.about div.container div.right div.contact {
+  margin-top: 4vh;
+}
+
+div.about div.container div.right div.contact div.left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4vh;
+  color: white;
+}
+
+div.about div.container div.right div.contact div.left span {
+  font-size: 17px;
+}
+
+div.about div.container div.right div.contact div.right {
+  display: flex;
+  flex-direction: column;
+}
+
+div.about div.container div.right div.contact div.right span {
+  font-size: 17px;
+  color: white;
+  font-style: italic;
+}
+
+div.about div.container div.right div.contact div.right a {
+  font-size: 17px;
+  color: #e13c33;
+  font-style: italic;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 46vh;
+}
+
+.single {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: white;
+}
+
+.single:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.snippet {
+  font-size: 1rem;
+  color: white;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25vh;
+}
+
+.details h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.details .content {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.details .content p {
+  color: white;
+}
+
+.details .delete {
+  padding: 10px 20px;
+  background-color: rgb(33, 85, 169);
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.details .delete:hover {
+  background-color: #3896b5;
+}
+
+.content-guidelines {
+  margin-top: 5vh;
+  margin-bottom: 50px;
+}
+
+footer {
+  background-color: rgb(230, 230, 230);
+}
+
+footer div.container {
+  display: flex;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  justify-content: left;
+  gap: 5vh;
+  margin-right: 70vh;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+}
+
+footer div.container div.left div.logo {
+  width: 100px;
+  height: 100px;
+  background-image: url(assets/Invincibles_logo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer div.container div.left p {
+  color: black;
+}
+
+footer div.container div.left div.socials a {
+  text-decoration: none;
+  color: rgb(90, 125, 182);
+  font-size: 2.5vh;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 1px;
+  background-color: white;
+}
+
+footer div.container div.center ul a {
+  padding-right: 10vh;
+  text-decoration: none;
+  color: rgb(90, 125, 182);
+}
+
+footer div.container div.right ul a {
+  padding-right: 15vh;
+  text-decoration: none;
+  color: rgb(90, 125, 182);
+}
+
+.create-blog {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgb(131, 156, 196);
+}
+
+.create-blog form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.create-blog label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.create-blog input[type="text"],
+.create-blog textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.create-blog textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.create-blog button {
+  padding: 10px 20px;
+  background-color: rgb(33, 85, 169);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.create-blog button:hover {
+  background-color: #3896b5;
+}
